@@ -1,0 +1,23 @@
+/* Evitar que el submenú se desplace hacia la derecha */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  left: 0;
+  top: 100%;
+  margin-top: 0;
+  display: none;
+  position: absolute;
+  width: max-content; /* Ajuste automático del ancho */
+  min-width: 200px; /* Puedes ajustar según tu necesidad */
+}
+
+/* Mostrar el submenú cuando se activa */
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
+.btn {
+  margin-right: 6em;
+}

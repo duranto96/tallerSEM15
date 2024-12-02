@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú con Subopciones y Barra de Búsqueda</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">LOREM IPSUM</a>
+
+        <!-- Opciones del menú -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Dolor</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Sit</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Amet</a></li>
+          </ul>
+
+          <!-- Menú desplegable (visible solo en MD y menores) -->
+          <div class="dropdown d-md-block d-lg-none">
+            <button
+              class="btn btn-outline-light"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li>
+                <form class="d-flex">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </form>
+              </li>
+              <li><a class="dropdown-item" href="#">Dolor</a></li>
+              <li><a class="dropdown-item" href="#">Sit</a></li>
+              <li><a class="dropdown-item" href="#">Amet</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Opciones</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                  <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                  <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                  <li><a class="dropdown-item" href="#">Opción 4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Barra de búsqueda (solo visible en LG y superior, alineada a la derecha) -->
+        <form class="d-none d-lg-flex ms-auto">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+        </form>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Sidebar (visible solo en LG y superior) -->
+        <div class="col-lg-3 d-none d-lg-block">
+          <div class="d-grid gap-2">
+            <button class="btn btn-outline-primary" type="button">
+              Opción 1
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+              Opción 2
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+              Opción 3
+            </button>
+            <button class="btn btn-outline-primary" type="button">
+              Opción 4
+            </button>
+          </div>
+        </div>
+
+        <!-- Main Text -->
+        <div class="col-lg-9 col-md-12">
+          <h3 class="text-center">Lorem ipsum...</h3>
+
+          <!-- Carousel -->
+          <div id="textCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active">
+                <p class="text-muted">
+                  ...vestibulum mollis, tortor ac congue commodo
+                </p>
+              </div>
+              <div class="carousel-item">
+                <p class="text-muted">
+                  ...vivamus sagittis lacus vel augue laoreet
+                </p>
+              </div>
+              <div class="carousel-item">
+                <p class="text-muted">
+                  ...morbi leo risus, porta ac consectetur ac
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <!-- Columnas de texto dinámicas -->
+            <div class="col-lg-4 col-md-6">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
+                provident velit illum eius hic fuga ullam commodi explicabo,
+                error doloremque eaque recusandae dicta! Repellat ipsam impedit
+                magnam animi harum eos.
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <p>
+                Phasellus eleifend semper tempor. Quisque mi Lorem ipsum, dolor
+                sit amet consectetur adipisicing elit. Nisi, in aliquam.
+                Aspernatur delectus nesciunt consectetur ullam dolores ratione
+                sit quidem! Placeat deleniti vel nam repellat quod, distinctio
+                tenetur ipsam harum?
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <p>
+                Fusce vitae enim et tellus lacinia condimentum eu at massa Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+                eveniet sapiente corporis saepe delectus aperiam nobis itaque
+                pariatur explicabo autem sit nam ad, vitae, temporibus corrupti!
+                Quis, distinctio? Recusandae, tenetur?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
